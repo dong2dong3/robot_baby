@@ -1,0 +1,253 @@
+body{
+	background-color: #F2E0AA95;
+}
+hr{
+	margin-top: -110px;
+	width: 300px;
+	border: 3px solid #3677FF90;
+	border-radius: 10px;
+}
+h1 {
+	margin-top: 15px;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.robots {
+	margin-top: 200px;
+	align-items: center;
+}
+
+.candy2{
+	background-color:#FF8B8B;
+}
+
+.left_heart,
+.right_heart{
+	background-color:#F74D4D00;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg,
+.left_ear,
+.right_ear,
+.candy1{
+	 background-color: #5f93e8;
+}
+	
+.heart{
+	display: flex;
+}
+	.left_heart{
+	width: 20px;  
+	height: 30px; 
+	margin-top: -50px;
+	margin-left:-50px;
+	transform: rotate(45deg);
+	border-radius: 300px 300px 0 0; 
+	}
+
+	.right_heart{
+	width: 20px;  
+	height: 30px; 
+	margin-top: -50px;
+	margin-left:-28px;
+	transform: rotate(-45deg);
+	border-radius: 300px 300px 0 0; 
+	}
+
+.bubble{
+	display: flex;
+}
+	.bubble1{
+	    margin-left: -77px;
+	    margin-top: -60px;
+		width: 60px;
+		height: 45px;
+		border: 4px dashed transparent;
+		border-radius: 100px;
+	}
+
+/*	.bubble2{
+		width: 0;
+		height: 0;
+   border-top: 10px solid transparent;
+   border-left: 20px solid  black;
+   border-bottom: 10px solid transparent;
+   margin-top: -28px;
+   margin-left: -8px;
+   transform: rotate(25deg);
+}*/
+
+.head { 
+	width: 200px;  
+	height: 100px; 
+	margin: 0 auto;
+	border-radius: 300px 300px 0 0; 
+	margin-bottom: 10px;
+} 
+
+
+	.head:hover {
+		transform: rotate(10deg);
+		transform-origin: 100% 100%;
+/*   	transition: 0.3s ease-in-out;*/
+	}
+.head:hover > .eyes > .right_eye{
+	    height: 6px;
+		width: 18px;
+		margin-top: 3px;
+		transform: rotate(3deg);
+}
+
+.head:hover > .heart >.left_heart,
+.head:hover > .heart >.right_heart{
+	background-color:#FE6868;
+}
+
+.head:hover > .bubble >.bubble1{
+	border: 4px dashed #FFA2A2;
+}
+
+
+.ears{
+	display: flex;
+	margin: 0 auto;
+}
+	.left_ear{
+		width: 15px;
+		height: 60px;
+		border-radius: 30px;
+		transform: rotate(-20deg);
+		margin-left: 20px;
+	}
+
+	.right_ear{
+		width: 15px;
+		height: 60px;
+		border-radius: 30px;
+		transform: rotate(20deg);
+		margin-left: 130px;
+	}
+
+.left_eye, .right_eye { 
+	width: 15px; 
+	height: 15px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+	.left_eye { 
+		/* These properties are new and you haven't encountered
+		in this course. Check out CSS Tricks to see what it does! */
+		position: relative; 
+		top: 0px; 
+		left:40px; 
+	} 
+
+	.right_eye { 
+		position: relative; 
+		top: -12px; 
+		left: 125px; 
+	}
+
+	/*.right_eye:hover{
+		height: 6px;
+		width: 18px;
+		margin-top: 3px;
+	}*/
+
+.upper_body { 
+	width: 280px; 
+	height: 150px;
+	display: flex; 
+    margin:0 auto;
+} 
+
+	.left_arm, .right_arm { 
+		width: 30px; 
+		height: 100px;
+		border-radius: 100px; 
+	} 
+
+	.left_arm { 
+		margin-right: 10px; 
+	} 
+
+		.left_arm:hover{
+			transform: rotate(150deg);
+			transform-origin: 50% 15%;
+		}		
+
+	.right_arm { 
+		margin-left: 10px; 
+	} 
+
+	.candy2{
+		width:25px;
+		height:25px;
+		border-radius: 100px;
+		margin-top: 110px;
+		margin-left: 16px;
+	}
+
+	.candy1{
+		width:5px;
+		height:50px;
+		border-radius: 30px;
+		transform: rotate(-15deg);
+		transform-origin: 50% 10%;
+		margin-top: -70px;
+		margin-left: 11px;
+	}
+
+.right_arm:hover{
+	transform: rotate(-150deg);
+	transform-origin: 50% 15%;
+}
+
+.torso { 
+	width: 200px; 
+	height: 130px;
+	border-radius: 0 0 30px 30px; 
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	display: flex;
+	margin: 0 auto;
+
+} 
+
+.left_leg, .right_leg { 
+	width: 20px; 
+	height: 90px;
+	border-radius: 0 0 100px 100px;
+	margin-top: -50px; 
+
+} 
+
+.left_leg { 
+	margin-left: 40px; 
+} 
+
+.left_leg:hover {
+    transform: rotate(20deg);
+    transform-origin: 50% 10%;
+}
+
+.right_leg { 
+	margin-left: 80px;
+}
+
+.right_leg:hover {
+    transform: rotate(-20deg);
+    transform-origin: 50% 10%
+}
+

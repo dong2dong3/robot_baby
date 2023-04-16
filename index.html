@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Wall</title>
     <link rel="stylesheet" href="styles.css">
-    <title>First Page</title>
-</head>
-<body>
-    <h2>Pony pony</h2>
-    <script src="main.js"></script>
-    <img src="pony_pony.jpg">
-</body>
+  </head>
+  <body>
+    <div class="photo-wall">
+      <div class="photo">
+        <div class="photo-front">
+          <img src="echo.jpg" alt="Echo">
+        </div>
+        <div class="photo-back">
+          <textarea placeholder="Enter your memory here..."></textarea>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-front">
+          <img src="pony.jpg" alt="Pony">
+        </div>
+        <div class="photo-back">
+          <textarea placeholder="Enter your memory here..."></textarea>
+        </div>
+      </div>
+      <div class="photo">
+        <div class="photo-front">
+          <img src="anyou.jpg" alt="Anyou">
+        </div>
+        <div class="photo-back">
+          <textarea placeholder="Enter your memory here..."></textarea>
+        </div>
+      </div>
+    </div>
+    <input type="file" id="file-input" accept="image/*" style="display:none;">
+    <button id="add-photo">Add Photo</button>
+    <script src="script.js"></script>
+  </body>
 </html>
