@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Photo Wall</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <div class="photo-wall">
-      <div class="photo">
-        <div class="photo-front">
-          <img src="echo.jpg" alt="Echo">
+<head>
+  <title>RoboPage</title>
+  <link rel="stylesheet" type="text/css" href="robot_baby.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="robots">
+    <div class="android"> 
+      <div class="head"> 
+        <div class="ears">
+          <div class="left_ear"></div>
+          <div class="right_ear"></div>
         </div>
-        <div class="photo-back">
-          <textarea placeholder="Enter your memory here..."></textarea>
+        <div class="eyes"> 
+          <div class="left_eye"></div> 
+          <div class="right_eye"></div>
+        </div> 
+        <div class="heart">
+            <div class="left_heart"></div>
+            <div class="right_heart"></div>
         </div>
-      </div>
-      <div class="photo">
-        <div class="photo-front">
-          <img src="pony.jpg" alt="Pony">
+        <div class="bubble">
+          <div class="bubble1"></div>
+          <div class="bubble2"></div>
         </div>
-        <div class="photo-back">
-          <textarea placeholder="Enter your memory here..."></textarea>
+      </div> 
+      <div class="upper_body"> 
+        <div class="left_arm"></div> 
+        <div class="torso"></div> 
+        <div class="right_arm"> 
+          <div class="candy">
+            <div class="candy2"></div>
+            <div class="candy1"></div>
+          </div>
         </div>
-      </div>
-      <div class="photo">
-        <div class="photo-front">
-          <img src="anyou.jpg" alt="Anyou">
-        </div>
-        <div class="photo-back">
-          <textarea placeholder="Enter your memory here..."></textarea>
-        </div>
-      </div>
+      </div> 
+      <div class="lower_body"> 
+        <div class="left_leg"></div> 
+        <div class="right_leg"></div> 
+      </div> 
     </div>
-    <input type="file" id="file-input" accept="image/*" style="display:none;">
-    <button id="add-photo">Add Photo</button>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <hr>
+  <h1>Robot Baby !</h1>
+</body>
 </html>
